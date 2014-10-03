@@ -1,0 +1,22 @@
+ <RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+  
+        
+        <Button android:id="@+id/takaisin" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+             android:text="Paluu"
+    		android:onClick="back"
+            />
+        
+
+        <ListView
+        
+            android:id="@+id/listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/takaisin" />
+    </RelativeLayout>

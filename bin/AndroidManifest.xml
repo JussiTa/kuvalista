@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kuvalista"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Splash screen -->
+        <activity
+            android:name="com.example.kuvalista.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:configChanges="orientation|screenSize" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <receiver android:name="MyReceiver" >
+            <intent-filter>
+                <action android:name="MyBroadcast" >
+                    </action>
+            </intent-filter>
+        </receiver>
+        
+        
+        <activity
+            android:name="com.example.kuvalista.MainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com/example/picktrack/SplashScreen" 
+            android:configChanges="orientation|screenSize" >
+        </activity>
+       
+       
+        <activity
+            android:name="com.example.kuvalista.PictureActivity"
+            android:label="@string/picture"
+            android:parentActivityName="com/example/picktrack/ListViewExampleActivity"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        
+        <activity
+            android:name="com.example.kuvalista.ListViewActivity"
+            android:label="@string/picture"
+            android:parentActivityName="com/example/picktrack/MainActivity" 
+            >
+        </activity>
+        
+        
+        <activity
+            android:name="com.example.kuvalista.CameraActivity"
+            android:label="@string/picture"
+            android:parentActivityName="com/example/picktrack/MainActivity" 
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        
+        
+        
+        
+    </application>
+
+</manifest>

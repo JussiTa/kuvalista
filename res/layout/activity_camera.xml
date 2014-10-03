@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    tools:context=".MainActivity" >
+ 
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+ 
+        <!-- Kuvan otto nappula -->
+        <Button
+            android:id="@+id/btnCapturePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ota kuva"
+            android:layout_marginBottom="10dp"/>
+        
+          <!-- Väimuistin tyhäys -->
+        <Button
+            android:id="@+id/btntyhjays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tyhjää välimuisti"
+            android:layout_marginBottom="10dp"/>  
+        
+ 
+        <!-- Paluu- nappula -->
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paluu" />
+    </LinearLayout>
+ 
+ 
+</LinearLayout>

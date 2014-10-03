@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KuvaLista</string>
+    <string name="action_settings">Settings</string>
+ 	<string name="picture">ListItem</string>
+    
+    <string name="wallpaper">Wallpaper</string>
+    <color name="myColor">#FF99CC</color>
+   
+    <string name="activity_locations">List</string>
+   
+    
+    
+    
+   
+    
+    
+    
+
+</resources>
